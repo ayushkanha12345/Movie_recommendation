@@ -43,7 +43,7 @@ def recommend(movie):
          recommended_movies_link.append(fetch_link(movie_id))
     return recommended_movies,recommended_movies_posters,recommended_movies_link
 
-movies_dict=pickle.load(open('https://github.com/ayushkanha12345/Movie_recommendation/blob/main/movie_dict.pkl','rb'))
+movies_dict=pickle.load(open('movie_dict.pkl','rb'))
 
 movies=pd.DataFrame(movies_dict)
 
